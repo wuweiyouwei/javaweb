@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+
+    <!--列表页面-->
+    <servlet>
+        <servlet-name>listServlet</servlet-name>
+        <servlet-class>com.bjpowenode.oa.web.ListServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>listServlet</servlet-name>
+        <url-pattern>/dept/list</url-pattern>
+    </servlet-mapping>
+
+    <!--详情展示-->
+    <servlet>
+        <servlet-name>detailServlet</servlet-name>
+        <servlet-class>com.bjpowenode.oa.web.DetailServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>detailServlet</servlet-name>
+        <url-pattern>/dept/detail</url-pattern>
+    </servlet-mapping>
+
+    <!--删除-->
+    <servlet>
+        <servlet-name>deleteServlet</servlet-name>
+        <servlet-class>com.bjpowenode.oa.web.DeleteServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>deleteServlet</servlet-name>
+        <url-pattern>/dept/delete</url-pattern>
+    </servlet-mapping>
+
+
+    <!--添加-->
+    <servlet>
+        <servlet-name>addServlet</servlet-name>
+        <servlet-class>com.bjpowenode.oa.web.AddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addServlet</servlet-name>
+        <url-pattern>/dept/add</url-pattern>
+    </servlet-mapping>
+
+
+    <!--更新列表展示-->
+    <servlet>
+        <servlet-name>updateServlet</servlet-name>
+        <servlet-class>com.bjpowenode.oa.web.UpdateServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>updateServlet</servlet-name>
+        <url-pattern>/dept/update</url-pattern>
+    </servlet-mapping>
+
+    <!--更新列表展示-->
+    <servlet>
+        <servlet-name>modifyServlet</servlet-name>
+        <servlet-class>com.bjpowenode.oa.web.ModifyServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>modifyServlet</servlet-name>
+        <url-pattern>/dept/modify</url-pattern>
+    </servlet-mapping>
+
+
+
+</web-app>
